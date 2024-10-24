@@ -4516,11 +4516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Osmarsan\\Documents\\Formaapp\\Formaapp.csproj",
+      "projectUniqueName": "C:\\Users\\Osmarsan\\Documents\\netReactjs\\Formaapp.csproj",
       "projectName": "Formaapp",
-      "projectPath": "C:\\Users\\Osmarsan\\Documents\\Formaapp\\Formaapp.csproj",
+      "projectPath": "C:\\Users\\Osmarsan\\Documents\\netReactjs\\Formaapp.csproj",
       "packagesPath": "C:\\Users\\Osmarsan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Osmarsan\\Documents\\Formaapp\\obj\\",
+      "outputPath": "C:\\Users\\Osmarsan\\Documents\\netReactjs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Osmarsan\\AppData\\Roaming\\NuGet\\NuGet.Config"

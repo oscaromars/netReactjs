@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Formaapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87494cf8474c92f8eba2dd7988c10c7c7a117025")]
 [assembly: System.Reflection.AssemblyProductAttribute("Formaapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Formaapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

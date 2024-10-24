@@ -10,23 +10,23 @@ GO
 USE MisFormas;
 GO
 
-IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Cabecera')
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Cabeceras')
 BEGIN
-    CREATE TABLE Cabecera (
+    CREATE TABLE Cabeceras (
         Id INT PRIMARY KEY IDENTITY(1,1),
         NombreTabla NVARCHAR(100) NOT NULL,
         FechaCreacion DATETIME DEFAULT GETDATE(),
         FechaModificacion DATETIME DEFAULT GETDATE(),
         Estado BIT NOT NULL, 
-        CONSTRAINT CK_Cabecera_Estado CHECK (Estado IN (0, 1))  
+        CONSTRAINT CK_Cabeceras_Estado CHECK (Estado IN (0, 1))  
     );
 END;
 GO
 
 
-IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Detalle')
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Detalles')
 BEGIN
-    CREATE TABLE Detalle (
+    CREATE TABLE Detalles (
         Id INT PRIMARY KEY IDENTITY(1,1),
         CabeceraId INT NOT NULL,
         CampoDetalle NVARCHAR(255) NOT NULL,
@@ -34,9 +34,9 @@ BEGIN
         Estado BIT NOT NULL DEFAULT 1,  
         FechaCreacion DATETIME DEFAULT GETDATE(),
         FechaModificacion DATETIME DEFAULT GETDATE(),
-        CONSTRAINT FK_Detalle_Cabecera FOREIGN KEY (CabeceraId) 
+        CONSTRAINT FK_Detalle_Cabeceras FOREIGN KEY (CabeceraId) 
             REFERENCES Cabecera(Id) ON DELETE CASCADE,
-        CONSTRAINT CK_Detalle_Estado CHECK (Estado IN (0, 1))  
+        CONSTRAINT CK_Detalles_Estado CHECK (Estado IN (0, 1))  
     );
 END;
 GO
